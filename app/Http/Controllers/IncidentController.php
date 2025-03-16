@@ -6,14 +6,19 @@ use Illuminate\Http\Request;
 class IncidentController extends Controller
 {
     public function submit(Request $request)
-    {
-        // Récupérer les données du formulaire
-        $data = $request->validate([
-            'matricule' => 'required|string',
-            'filiere' => 'required|string'
-        ]);
+{
+    // Validation : Plant est requis, Matricule est optionnel
+    $request->validate([
+        'filiere' => 'required',  // Plant obligatoire
+        'matricule' => 'nullable|string', // Matricule facultatif
+    ]);
 
-        // Simuler un traitement (enregistrement dans la base de données)
-        return redirect('/incident')->with('success', 'Incident enregistré avec succès!');
+    // Vérifier la langue choisie et rediriger vers la bonne page
+    if ($request->language == 'fr') {
+        return redirect()->route('report'); // Page en français
+    } else {
+        return redirect()->route('report2'); // Page en arabe
     }
+}
+
 }

@@ -1,3 +1,5 @@
+<!-- resources/views/incident.blade.php -->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -103,6 +105,7 @@
             margin: 0;
             padding-left: 20px;
             flex-shrink: 0;
+            font-family: Arial, sans-serif ;
         }
         .color25{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -124,29 +127,38 @@
     <div class="container">
         <div class="header-bar">
             <h2>LEONI</h2>
+            
             <img src="{{ asset('images/Capture-removebg-preview.png') }}" alt="Left Image" class="image-headerBar">
         </div>
         <div class="content">
             <div class="header-content">
                 <img src="{{ asset('images/معلومات-عن-ادارة-المخاطر-وخصائصها.jpg') }}" alt="Left Image">
-                <span>Risk, Incident and Near Miss Reporting - الإبلاغ عن المخاطر والأحداث القريبة من الحوادث</span>
+                <span>Reporting risks and near misses - الإبلاغ عن المخاطر و شبه الحوادث</span>
                 <img src="{{ asset('images/يجب-عليك-إدراك-المخاطر-العامة-المحيطة-بك-_انواع-المخاطر3-scaled.jpg') }}" alt="Right Image">
             </div>
             <div class="form-container">
-                <form action="{{ route('incident.submit') }}" method="POST">
-                    @csrf
-                    <label for="matricule" class="color25">Matricule </label>
-                    <input type="text" id="matricule" name="matricule" placeholder="Entrez votre matricule" required>
+            <form action="{{ route('incident.submit') }}" method="POST">
+    @csrf
 
-                    <label for="filiere" class="color25">Filière </label>
-                    <select id="filiere" name="filiere" required>
-                        <option value="">Sélectionnez votre filière</option>
-                        <option value="enclicitage+bandage">VOLKSWAGEN</option>
-                        <option value="vkf">BMW</option>
-                        <option value="bandage">AUDI</option>
-                    </select>
-                    <button type="submit" name="language" value="fr">Français</button>
-                    <button type="submit" name="language" value="ar">العربية</button>
+    <label for="matricule" class="color25">Matricule</label>
+    <input type="text" id="matricule" name="matricule" placeholder="Entrez votre matricule">
+
+    <label for="filiere" class="color25">Plant</label>
+    <select id="filiere" name="filiere" required>
+        <option value="">Sélectionnez votre Plant</option>
+        <option value="enclicitage+bandage">VOLKSWAGEN</option>
+        <option value="vkf">BMW</option>
+        <option value="bandage">AUDI</option>
+    </select>
+
+    <button type="submit" name="language" value="fr">Français</button>
+    <button type="submit" name="language" value="ar">العربية</button>
+</form>
+
+                
+
+                   
+
                 </form>
             </div>
         </div>
