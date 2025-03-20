@@ -148,10 +148,11 @@
             <div class="form-container">
                 <h2>تسجيل حادث</h2>
                 <label for="emplacement">الموقع</label>
-                <input type="text" id="emplacement" name="emplacement" placeholder="أدخل الموقع">
+<input type="text" id="emplacement" name="emplacement" placeholder="أدخل الموقع" required>
 
-                <label for="description">الوصف</label>
-                <textarea id="description" name="description" placeholder="صف الحادث"></textarea>
+<label for="description">الوصف</label>
+<textarea id="description" name="description" placeholder="صف الحادث" required></textarea>
+
 
                 <label for="date">التاريخ</label>
                 <input type="date" id="date" name="date">
@@ -166,47 +167,47 @@
             <div class="image-container">
                 <figure>
                     <img src="{{ asset('images/Capture11.PNG') }}" alt="حاجز">
-                    <figcaption>حاجز</figcaption>
+                    <figcaption>خطر حاجز</figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture15.PNG') }}" alt="حريق">
-                    <figcaption>حريق</figcaption>
+                    <figcaption>خطر حريق</figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture16.PNG') }}" alt="مواد سامة">
-                    <figcaption>مواد سامة</figcaption>
+                    <figcaption>خطر مواد سامة</figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture17.PNG') }}" alt="تسرب مواد">
-                    <figcaption>مواد محترقة</figcaption>
+                    <figcaption>خطر مواد محترقة</figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture18.PNG') }}" alt="انفجار">
-                    <figcaption>غاز سام</figcaption>
+                    <figcaption>خطر غاز سام</figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture19.PNG') }}" alt="غاز سام">
-                    <figcaption>انفجار</figcaption>
+                    <figcaption>خطر انفجار</figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture20.PNG') }}" alt="لحام">
-                    <figcaption>لحام</figcaption>
+                    <figcaption>خطر لحام</figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture21.PNG') }}" alt="دخان سام">
-                    <figcaption>دخان سام</figcaption>
+                    <figcaption>خطر دخان سام</figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture22.PNG') }}" alt="سقوط جسم">
-                    <figcaption>سقوط جسم</figcaption>
+                    <figcaption>خطر سقوط جسم</figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture23.PNG') }}" alt="حفرة في الأرض">
-                    <figcaption>حفرة في الأرض</figcaption>
+                    <figcaption>خطر سقوط في حفرة </figcaption>
                 </figure>
                 <figure>
                     <img src="{{ asset('images/Capture24.PNG') }}" alt="حفر">
-                    <figcaption>حفر</figcaption>
+                    <figcaption>خطر إصابة</figcaption>
                 </figure>
             </div>
         </div>

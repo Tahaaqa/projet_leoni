@@ -21,7 +21,7 @@
             background-attachment: fixed;
             width: 100%;
         }
-        <style>
+        
         .content {
             display: flex;
             flex-direction: column;

@@ -148,61 +148,61 @@
         </div>
         <div class="image-grid">
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'chute']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'chute']) }}">
                     <img src="{{ asset('images/Capture5.PNG') }}" alt="Chute">
                 </a>
-                <figcaption>سقوط</figcaption>
+                <figcaption>خطر سقوط</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'brûlure']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'brûlure']) }}">
                     <img src="{{ asset('images/Capture1.PNG') }}" alt="Brûlure">
                 </a>
-                <figcaption>تعثر</figcaption>
+                <figcaption>خطر تعثر </figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'électrocution']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'électrocution']) }}">
                     <img src="{{ asset('images/Capture2.PNG') }}" alt="Électrocution">
                 </a>
-                <figcaption>سقوط من السلم</figcaption> 
+                <figcaption>خطر سقوط من السلم</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'collision']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'collision']) }}">
                     <img src="{{ asset('images/Capture3.PNG') }}" alt="Collision">
                 </a>
-                <figcaption>سقوط من مقعد</figcaption>
+                <figcaption>خطر سقوط من مقعد</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'coupure']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'coupure']) }}">
                     <img src="{{ asset('images/Capture4.PNG') }}" alt="Coupure">
                 </a>
-                <figcaption>انزلاق</figcaption>
+                <figcaption>خطر انزلاق</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'glissade']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'glissade']) }}">
                     <img src="{{ asset('images/Capture6.PNG') }}" alt="Glissade">
                 </a>
-                <figcaption>صعقة كهربائية</figcaption>
+                <figcaption>خطر صعقة كهربائية </figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'écrasement']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'écrasement']) }}">
                     <img src="{{ asset('images/Capture7.PNG') }}" alt="Écrasement">
                 </a>
-                <figcaption>سحق</figcaption>
+                <figcaption>خطر سحق</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'projection']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'projection']) }}">
                     <img src="{{ asset('images/Capture8.PNG') }}" alt="Projection">
                 </a>
-                <figcaption>جرح</figcaption>
+                <figcaption>خطر إصابة</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'intoxication']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'intoxication']) }}">
                     <img src="{{ asset('images/Capture9.PNG') }}" alt="Intoxication">
                 </a>
-                <figcaption>الظهر المنحني</figcaption>
+                <figcaption>خطر الظهر المنحني</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'autre']) }}">
+                <a href="{{ route('imageformulaireArabe', ['type' => 'autre']) }}">
                     <img src="{{ asset('images/Capture10.PNG') }}" alt="Autre">
                 </a>
                 <figcaption>جسم ساقط</figcaption>

@@ -149,61 +149,61 @@
         </div>
         <div class="image-grid">
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'chute']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'chute']) }}">
                     <img src="{{ asset('images/Capture5.PNG') }}" alt="Chute">
                 </a>
-                <figcaption>Chute</figcaption>
+                <figcaption>Risque de chute</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'brûlure']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'brûlure']) }}">
                     <img src="{{ asset('images/Capture1.PNG') }}" alt="Brûlure">
                 </a>
-                <figcaption>Trébuchement</figcaption>
+                <figcaption>Risque de trébucher</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'électrocution']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'électrocution']) }}">
                     <img src="{{ asset('images/Capture2.PNG') }}" alt="Électrocution">
                 </a>
-                <figcaption>Siège</figcaption>
+                <figcaption>Danger d’une chute de la paix</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'collision']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'collision']) }}">
                     <img src="{{ asset('images/Capture3.PNG') }}" alt="Collision">
                 </a>
-                <figcaption>Échelle</figcaption>
+                <figcaption>Risque de chute d’un siège</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'coupure']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'coupure']) }}">
                     <img src="{{ asset('images/Capture4.PNG') }}" alt="Coupure">
                 </a>
-                <figcaption>Glissade</figcaption>
+                <figcaption>Risque de glissade</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'glissade']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'glissade']) }}">
                     <img src="{{ asset('images/Capture6.PNG') }}" alt="Glissade">
                 </a>
-                <figcaption>Électrocution</figcaption>
+                <figcaption>Risque de choc électrique</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'écrasement']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'écrasement']) }}">
                     <img src="{{ asset('images/Capture7.PNG') }}" alt="Écrasement">
                 </a>
-                <figcaption>Écraser</figcaption>
+                <figcaption>Risque d’écrasement</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'projection']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'projection']) }}">
                     <img src="{{ asset('images/Capture8.PNG') }}" alt="Projection">
                 </a>
-                <figcaption>Couper</figcaption>
+                <figcaption>Risque d'infection</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'intoxication']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
                     <img src="{{ asset('images/Capture9.PNG') }}" alt="Intoxication">
                 </a>
-                <figcaption>Dos courbé</figcaption>
+                <figcaption>Risque de courbure du dos</figcaption>
             </figure>
             <figure>
-                <a href="{{ route('incident.submit', ['type' => 'autre']) }}">
+                <a href="{{ route('imageFormulaire', ['type' => 'autre']) }}">
                     <img src="{{ asset('images/Capture10.PNG') }}" alt="Autre">
                 </a>
                 <figcaption>Objet tombant</figcaption>
