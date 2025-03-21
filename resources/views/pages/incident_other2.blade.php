@@ -166,47 +166,47 @@
             <!-- صور الحوادث -->
             <div class="image-container">
                 <figure>
-                    <img src="{{ asset('images/Capture11.PNG') }}" alt="حاجز">
+                    <img src="{{ asset('images/Capture11-removebg-preview.png') }}" alt="حاجز">
                     <figcaption>خطر حاجز</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture15.PNG') }}" alt="حريق">
+                    <img src="{{ asset('images/Capture15-removebg-preview.png') }}" alt="حريق">
                     <figcaption>خطر حريق</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture16.PNG') }}" alt="مواد سامة">
+                    <img src="{{ asset('images/Capture16-removebg-preview.png') }}" alt="مواد سامة">
                     <figcaption>خطر مواد سامة</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture17.PNG') }}" alt="تسرب مواد">
+                    <img src="{{ asset('images/Capture17-removebg-preview.png') }}" alt="تسرب مواد">
                     <figcaption>خطر مواد محترقة</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture18.PNG') }}" alt="انفجار">
+                    <img src="{{ asset('images/Capture18-removebg-preview.png') }}" alt="انفجار">
                     <figcaption>خطر غاز سام</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture19.PNG') }}" alt="غاز سام">
+                    <img src="{{ asset('images/Capture19-removebg-preview.png') }}" alt="غاز سام">
                     <figcaption>خطر انفجار</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture20.PNG') }}" alt="لحام">
+                    <img src="{{ asset('images/Capture20-removebg-preview.png') }}" alt="لحام">
                     <figcaption>خطر لحام</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture21.PNG') }}" alt="دخان سام">
+                    <img src="{{ asset('images/Capture21-removebg-preview (1).png') }}" alt="دخان سام">
                     <figcaption>خطر دخان سام</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture22.PNG') }}" alt="سقوط جسم">
+                    <img src="{{ asset('images/Capture13-removebg-preview.png') }}" alt="سقوط جسم">
                     <figcaption>خطر سقوط جسم</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture23.PNG') }}" alt="حفرة في الأرض">
+                    <img src="{{ asset('images/Capture23-removebg-preview.png') }}" alt="حفرة في الأرض">
                     <figcaption>خطر سقوط في حفرة </figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('images/Capture24.PNG') }}" alt="حفر">
+                    <img src="{{ asset('images/Capture24-removebg-preview.png') }}" alt="حفر">
                     <figcaption>خطر إصابة</figcaption>
                 </figure>
             </div>

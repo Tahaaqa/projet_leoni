@@ -164,67 +164,67 @@
             <div class="image-container">
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture11.PNG') }}" alt="Barrière">
+                    <img src="{{ asset('images/Capture11-removebg-preview.png') }}" alt="Barrière">
                     </a>
                     <figcaption>Barrière du risque</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture15.PNG') }}" alt="Feu">
+                    <img src="{{ asset('images/Capture15-removebg-preview.png') }}" alt="Feu">
                     </a>
                     <figcaption>Risque d'incendie</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture16.PNG') }}" alt="Substance toxique">
+                    <img src="{{ asset('images/Capture16-removebg-preview.png') }}" alt="Substance toxique">
                     </a>
                     <figcaption>Substances toxiques dangereuses</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture17.PNG') }}" alt="Déversement">
+                    <img src="{{ asset('images/Capture17-removebg-preview.png') }}" alt="Déversement">
                     </a>
                     <figcaption>Danger des substances brûlées</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture18.PNG') }}" alt="Explosion">
+                    <img src="{{ asset('images/Capture18-removebg-preview.png') }}" alt="Explosion">
                     </a>
                     <figcaption>Danger de gaz toxiques</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture19.PNG') }}" alt="Gaz toxique">
+                    <img src="{{ asset('images/Capture19-removebg-preview.png') }}" alt="Gaz toxique">
                     </a>
                     <figcaption>Risque d'explosion</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture20.PNG') }}" alt="Soudure">
+                    <img src="{{ asset('images/Capture20-removebg-preview.png') }}" alt="Soudure">
                     </a>
                     <figcaption>Danger de Soudure</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture21.PNG') }}" alt="Fumée toxique">
+                    <img src="{{ asset('images/Capture21-removebg-preview (2).png') }}" alt="Fumée toxique">
                     </a>
                     <figcaption>Danger de Fumée toxique</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture22.PNG') }}" alt="Chute d'objet">
+                    <img src="{{ asset('images/Capture13-removebg-preview (1).png') }}" alt="Chute d'objet">
                     </a>
                     <figcaption>Chute d'objet</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture23.PNG') }}" alt="Trou au sol">
+                    <img src="{{ asset('images/Capture23-removebg-preview.png') }}" alt="Trou au sol">
                     </a>
                     <figcaption>Danger de Trou au sol</figcaption>
                 </figure>
                 <figure>
                 <a href="{{ route('imageFormulaire', ['type' => 'intoxication']) }}">
-                    <img src="{{ asset('images/Capture24.PNG') }}" alt="Perçage">
+                    <img src="{{ asset('images/Capture24-removebg-preview.png') }}" alt="Perçage">
                     </a>
                     <figcaption>Danger de Perçage</figcaption>
                 </figure>
