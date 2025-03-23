@@ -8,6 +8,19 @@
     <title>Déclaration d'Incident</title>
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <style>
+        .alert {
+            padding: 15px;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert-success {
+            color: #0f5132;
+            background-color: #d1e7dd;
+            border-color: #badbcc;
+        }
+
         .content {
             display: flex;
             flex-direction: column;
@@ -21,7 +34,7 @@
             background-attachment: fixed;
             width: 100%;
         }
-        
+
         .content {
             display: flex;
             flex-direction: column;
@@ -35,6 +48,7 @@
             background-attachment: fixed;
             width: 100%;
         }
+
         .header-content {
             display: flex;
             align-items: center;
@@ -46,9 +60,10 @@
             padding-bottom: 20px;
             border-radius: 10px;
             margin-top: 10px;
-            
-          
+
+
         }
+
         .header-content img {
             height: 60px;
             width: 100px;
@@ -56,11 +71,13 @@
             margin-right: 40px;
             margin-top: 1px;
         }
-        .header-content span{
+
+        .header-content span {
             font-family: serif;
-            font-size:larger;
+            font-size: larger;
             font-weight: bolder;
         }
+
         .form-container {
             display: flex;
             flex-direction: column;
@@ -72,6 +89,7 @@
             border-radius: 10px;
             margin-right: 60px;
         }
+
         input, select, button {
             width: 100%;
             padding: 10px;
@@ -81,15 +99,18 @@
             font-size: 16px;
             text-align: center;
         }
+
         button {
             background-color: #003366;
             color: white;
             cursor: pointer;
             font-weight: bold;
         }
+
         button:hover {
             background-color: #002244;
         }
+
         .header-bar {
             display: flex;
             align-items: center;
@@ -101,67 +122,93 @@
             font-weight: bold;
             justify-content: space-between;
         }
+
         .header-bar h2 {
             margin: 0;
             padding-left: 20px;
             flex-shrink: 0;
-            font-family: Arial, sans-serif ;
+            font-family: Arial, sans-serif;
         }
-        .color25{
+
+        .color25 {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: larger;
             font-weight: bolder;
             text-align: center; /* Centre le texte des labels */
             display: block; /* Force chaque label à être sur une ligne */
-             width: 100%;
+            width: 100%;
         }
-        .image-headerBar{
+
+        .image-headerBar {
             width: 6%;
             height: 6%;
             margin-right: 30px;
         }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert-danger {
+            color: #842029;
+            background-color: #f8d7da;
+            border-color: #f5c2c7;
+        }
+
     </style>
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header-bar">
-            <h2>LEONI</h2>
-            
-            <img src="{{ asset('images/Capture-removebg-preview.png') }}" alt="Left Image" class="image-headerBar">
+<div class="container">
+    <div class="header-bar">
+        <h2>LEONI</h2>
+
+        <img src="{{ asset('images/Capture-removebg-preview.png') }}" alt="Left Image" class="image-headerBar">
+    </div>
+    <div class="content">
+        <div class="header-content">
+            <img src="{{ asset('images/معلومات-عن-ادارة-المخاطر-وخصائصها.jpg') }}" alt="Left Image">
+            <span>Reporting risks and near misses - الإبلاغ عن المخاطر و شبه الحوادث</span>
+            <img src="{{ asset('images/يجب-عليك-إدراك-المخاطر-العامة-المحيطة-بك-_انواع-المخاطر3-scaled.jpg') }}"
+                 alt="Right Image">
         </div>
-        <div class="content">
-            <div class="header-content">
-                <img src="{{ asset('images/معلومات-عن-ادارة-المخاطر-وخصائصها.jpg') }}" alt="Left Image">
-                <span>Reporting risks and near misses - الإبلاغ عن المخاطر و شبه الحوادث</span>
-                <img src="{{ asset('images/يجب-عليك-إدراك-المخاطر-العامة-المحيطة-بك-_انواع-المخاطر3-scaled.jpg') }}" alt="Right Image">
-            </div>
-            <div class="form-container">
+        <div class="form-container">
+
+            @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+            @if(session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
             <form action="{{ route('incident.submit') }}" method="POST">
-    @csrf
+                @csrf
 
-    <label for="matricule" class="color25">Matricule</label>
-    <input type="text" id="matricule" name="matricule" placeholder="Entrez votre matricule">
+                <label for="matricule" class="color25">Matricule</label>
+                <input type="text" id="matricule" name="matricule" placeholder="Entrez votre matricule">
 
-    <label for="filiere" class="color25">Plant</label>
-    <select id="filiere" name="filiere" required>
-        <option value="">Sélectionnez votre Plant</option>
-        <option value="enclicitage+bandage">VOLKSWAGEN</option>
-        <option value="vkf">BMW</option>
-        <option value="bandage">AUDI</option>
-    </select>
+                <label for="filiere" class="color25">Plant</label>
+                <select id="filiere" name="filiere" required>
+                    <option value="">Sélectionnez votre Plant</option>
+                    <option value="enclicitage+bandage">VOLKSWAGEN</option>
+                    <option value="vkf">BMW</option>
+                    <option value="bandage">AUDI</option>
+                </select>
 
-    <button type="submit" name="language" value="fr">Français</button>
-    <button type="submit" name="language" value="ar">العربية</button>
-</form>
+                <button type="submit" name="language" value="fr">Français</button>
+                <button type="submit" name="language" value="ar">العربية</button>
+            </form>
 
-                
 
-                   
-
-                </form>
-            </div>
+            </form>
         </div>
     </div>
+</div>
 </body>
 </html>

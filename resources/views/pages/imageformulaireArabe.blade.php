@@ -102,7 +102,7 @@
     <div class="content">
         <div class="form-container">
             <h2>تسجيل حادث</h2>
-            <form action="{{ route('incident.submit') }}" method="POST">
+            <form action="{{ route('incident.save') }}" method="POST">
                 @csrf
                 <label for="emplacement">الموقع</label>
                 <input type="text" id="emplacement" name="emplacement" placeholder="أدخل الموقع" required>
@@ -111,7 +111,7 @@
                 <textarea id="description" name="description" placeholder="صف الحادث" required></textarea>
 
                 <label for="date">التاريخ</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="report_date">
 
                 <label for="solution">الحل المقترح</label>
                 <textarea id="solution" name="solution" placeholder="اقترح حلاً"></textarea>

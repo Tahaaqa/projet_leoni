@@ -101,7 +101,7 @@
     <div class="content">
         <div class="form-container">
             <h2>Déclarer un Accident</h2>
-            <form action="{{ route('incident.submit') }}" method="POST">
+            <form action="{{ route('incident.save') }}" method="POST">
                 @csrf
                 <label for="emplacement">Emplacement</label>
                 <input type="text" id="emplacement" name="emplacement" placeholder="Entrez l'emplacement" required>
@@ -110,7 +110,7 @@
                 <textarea id="description" name="description" placeholder="Décrivez l'accident" required></textarea>
 
                 <label for="date">Date</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="report_date">
 
                 <label for="solution">Solution</label>
                 <textarea id="solution" name="solution" placeholder="Proposez une solution"></textarea>

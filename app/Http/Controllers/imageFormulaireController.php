@@ -6,8 +6,10 @@ use Illuminate\Http\Request;
 
 class imageFormulaireController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+
+        session(['type' => $request->type]);
         return view('pages.imageFormulaire');
     }
 }
