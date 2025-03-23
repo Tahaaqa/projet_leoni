@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Report;
 use Illuminate\Http\Request;
-
+use App\Mail\ReportEmail;
+use Illuminate\Support\Facades\Mail;
 class IncidentController extends Controller
 {
     public function submit(Request $request)
@@ -38,7 +39,7 @@ class IncidentController extends Controller
         $report->description =$request->description;
         $report->solution =$request->solution;
         if($report->save()){
-
+            Mail::to('ben.zouari.intissar@gmail.com')->send(new ReportEmail());
             return redirect()->route('incident')->with('success', 'Votre rapport a été enregistré et envoyé. Merci !');
 
         }else{
