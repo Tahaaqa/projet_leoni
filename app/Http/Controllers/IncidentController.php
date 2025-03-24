@@ -6,6 +6,8 @@ use App\Models\Report;
 use Illuminate\Http\Request;
 use App\Mail\ReportEmail;
 use Illuminate\Support\Facades\Mail;
+use function Pest\Laravel\json;
+
 class IncidentController extends Controller
 {
     public function submit(Request $request)
@@ -39,7 +41,25 @@ class IncidentController extends Controller
         $report->description =$request->description;
         $report->solution =$request->solution;
         if($report->save()){
-            Mail::to('ben.zouari.intissar@gmail.com')->send(new ReportEmail());
+            $fileName = 'reports_'.time().'.csv';
+            $filePath = storage_path('app/' . $fileName);
+
+            // Fetch data from reports table
+            $reports = Report::select('matricule', 'filiere', 'lang', 'type','emplacement','report_date','description','solution')->get();
+            // Open file in write mode
+            $file = fopen($filePath, 'w');
+
+            // Add CSV Headers
+            fputcsv($file, ['Matricule', 'Plant', 'Lang', 'Type','Emplacement','Date','Description','Solution']);
+
+            // Add rows to CSV
+            foreach ($reports as $report) {
+                fputcsv($file, [$report->matricule, $report->filiere, $report->lang, $report->type, $report->emplacement, $report->report_date, $report->description, $report->solution]);
+            }
+
+            // Close file
+            fclose($file);
+            Mail::to('ben.zouari.intissar@gmail.com')->send(new ReportEmail($filePath,$fileName));
             return redirect()->route('incident')->with('success', 'Votre rapport a été enregistré et envoyé. Merci !');
 
         }else{

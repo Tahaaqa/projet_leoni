@@ -15,17 +15,21 @@ class ReportEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $filePath;
+    public $fileName;
 
+    public function __construct($filePath,$fileName)
+    {
+        $this->filePath = $filePath;
+        $this->fileName = $fileName;
+    }
     public function build()
     {
-        $fileName = 'reports_'.time().'.xlsx';
-        $filePath = storage_path('app/public/' . $fileName);
-
-        // Generate Excel file
-        Excel::store(new ReportsExport, $fileName, 'local');
-
-        return $this->subject('Rapport des Activités')
+        return $this->subject("Rapport d'Incident (CSV)")
             ->view('emails.report')
-            ->attach($filePath);
+            ->attach($this->filePath, [
+                'as' => $this->fileName,
+                'mime' => 'text/csv',
+            ]);
     }
 }
